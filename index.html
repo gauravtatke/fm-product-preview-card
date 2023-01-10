@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200|Fraunces:700"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        background-color: hsl(30, 38%, 92%);
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 90%;
+        height: 70%;
+        background-color: #faefe3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        height: 450px;
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .description {
+        background-color: white;
+        padding: 20px;
+        /* border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px; */
+      }
+
+      /* .bottle-img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      } */
+      .description p {
+        font-size: 14px;
+      }
+
+      .button {
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="container">
+          <div class="bottle-img">
+            <img src="./images/image-product-desktop.jpg" alt="Perfume" width="300" height="450" />
+          </div>
+          <div class="description">
+            <p
+              style="
+                font-family: Montserrat, sans-serif;
+                font-weight: 100;
+                font-size: 0.75rem;
+                letter-spacing: 0.4em;
+                margin-bottom: -30px;
+              "
+            >
+              PERFUME
+            </p>
+            <p
+              style="
+                font-family: Fraunces, sans-serif;
+                font-weight: 700;
+                font-size: 2.5rem;
+                margin-bottom: -5px;
+              "
+            >
+              Gabrielle Essence Eau De Parfum
+            </p>
+            <p style="font-family: Montserrat, sans-serif; font-weight: 100; font-size: 0.8rem">
+              A floral, solar and voluptuous interpretation composed by Olivier Polge,
+              Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div>
+              <span
+                style="
+                  font-family: Fraunces, serif;
+                  font-weight: 700;
+                  font-size: 2rem;
+                  color: hsl(158, 36%, 37%);
+                "
+                >$149.99</span
+              ><span style="margin-left: 30px; font-size: 0.8rem"><s>$169.99</s></span>
+            </div>
+            <button class="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
